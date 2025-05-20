@@ -1,0 +1,26 @@
+/*WAP to display a characters n times by using default arguments for all parameter
+(Assume function takes 2 arguments,one character to be printed and other no of times the character to be printed)*/
+
+#include<iostream>
+using namespace std;
+void display(char a='x',int n=5)
+{
+	int i;
+	for(i=1;i<=n;i++)
+{
+
+	cout<<a;
+}
+cout<<endl;
+}
+int main()
+{
+	char x;
+	int a;
+	cout<<"ENter the characer and no of times:";
+	cin>>x>>a;
+	display(x,a);
+	display(x);
+	display();
+	return 0;
+}
