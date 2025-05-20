@@ -1,0 +1,28 @@
+//WAP to find the volume of cube, cylinder and rectangular box by using concept of function overloading
+#include<iostream>
+using namespace std;
+int volume(int x)
+{
+	int v=x*x*x;
+	return v;
+}
+float volume(int x, int y)
+{
+	float v=3.14*x*x*y;
+	return v;
+}
+float volume(int x,int y,int z)
+{
+	int v=x*y*z;
+	return v;
+}
+int main()
+{
+	int x=5,y=3,z=2;
+	cout <<volume(x)<<endl;
+	cout<<volume(x,y)<<endl;
+	cout<<volume(x,y,z)<<endl;
+	return 0;
+}
+
+
