@@ -1,0 +1,18 @@
+/*ASsume the employee will have to pay 10 percent income tax to the government. Ask user to enter the employee salary. Use inline function 
+to display the net payment to the employee by the company*/
+#include<iostream>
+using namespace std;
+inline void sal(int x)
+{
+	int sal=x-(0.1)*x;
+	cout<<"NEt payment is :"<<sal;
+}
+int main()
+{
+	float a;
+	cout<<"Enter the salary";
+	cin>>a;
+	
+	sal(a);
+	return 0;
+}
